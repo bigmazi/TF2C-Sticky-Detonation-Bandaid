@@ -3,7 +3,7 @@
 #include <sdkhooks>
 #include <sdktools>
 
-#define PLUGIN_VERSION "1.1"
+#define PLUGIN_VERSION "1.2"
 
 public Plugin myinfo = {
 	name = "Stickies detonation fix",
@@ -162,7 +162,7 @@ int HasSbl(int c)
 		: 0;
 }
 
-int SblActive(int c)
+bool SblActive(int c)
 {
 	int secondary = GetPlayerWeaponSlot(c, 1);
 	
